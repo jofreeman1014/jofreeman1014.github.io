@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+      
+<body style="background: rgb(240, 240, 240);">
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #b58bb4; padding-left: 100px;">
+        <a class="navbar-brand">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item disabled" href="#" aria-disabled="true">Temperature vs. Lat</a>
+                  <a class="dropdown-item" href="humidity.html">Humidity vs. Lat</a>
+                  <a class="dropdown-item" href="cloudiness.html">Cloudiness vs. Lat</a>
+                  <a class="dropdown-item" href="windspeed.html">Wind Speed vs. Lat</a>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="compare.html">Comparison</a>
+            </li>
+  
+          </ul>
+        </div>
+    </nav>
+    <!--style = "float: right;"-->
+    <div class="container" >
+    <div class="row">
+
+    <div class = "box col-md-7 col-sm-12">
+        <h1>Temperature vs. Latitude</h1>
+        <img src="Resources/assets/images/Fig1.png" alt="Temperature" class="imgfit">
+        <p>It is a well known fact that the temperature closest to the poles are among the coldest temperatures on Earth, 
+            and conversely areas closer to the equator tend to be some of the hottest. Using our data, I find this fact to be 
+            mostly true. While I was unable to pull data across all latitudes, the data does still show a trend that agrees 
+            with the aforementioned statement about temperature. The maximum temperatures noted across a year's worth of data 
+            peaks highest closer to the equator, and decreases as latitude increases (as observations move away from the equator).
+        </p>
+    </div>
+    <div class="col-md-4 col-sm-12">
+        <div class="box">
+            <div class="row">
+                <div class="col-md-6 col-sm-3" style="padding: 15px;">
+                    <img src="Resources/assets/images/Fig1.png" alt="Temperature" class="img-thumbnail selected">
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding: 15px;">
+                    <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Humidity" class="img-thumbnail"></a>
+                </div>    
+                <div class="col-md-6 col-sm-3" style="padding: 15px;">
+                    <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Cloudiness" class="img-thumbnail"></a>
+                </div>
+                <div class="col-md-6 col-sm-3" style="padding: 15px;">
+                    <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="Wind Speed" class="img-thumbnail"></a>
+                </div>    
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
