@@ -1,4 +1,3 @@
-# Dependencies
 from bs4 import BeautifulSoup
 import requests
 import pymongo
@@ -55,7 +54,7 @@ def scraper():
     soup = BeautifulSoup(response.text, 'html.parser')
     tables = pd.read_html(url)
     tables[1]
-    mars_table = tables[1].to_html(index = False) # !!
+    mars_table = tables[1].to_html(index = False,header = False) # !!
 
 
     # Mars Hemisphere
@@ -72,20 +71,25 @@ def scraper():
         if item.has_attr('href'):
             tmp = item.text
             browser.click_link_by_partial_text(tmp)
-            #time.sleep(0.5)
-            browser.click_link_by_partial_text('Sample')
-            mars_hemi_img.append({"title":tmp,"img_url":browser.url})
+            tmp_res = requests.get(browser.url)
+            soup = BeautifulSoup(tmp_res.text, 'html.parser')
+            tmp_url = soup.find_all("a",href = True)
+            for item in tmp_url:
+                if "Sample" in item.text:
+                    mars_hemi_img.append({"title":tmp,"img_url":item['href']})#browser.url})
+                    break
+
             browser.back()
             #time.sleep(0.5)
     browser.quit()
 
     mars_data = {
-        "news_title": mars_title, #string
-        "news_body": mars_body, #string
-        "weather": mars_weather, #string
-        "image": featured_image_url, #url
-        "facts": mars_table, #html table
-        "hemi": mars_hemi_img #list of dictionaries
+        "news_title": mars_title, #string X
+        "news_body": mars_body, #string X
+        "weather": mars_weather, #string X
+        "image": featured_image_url, #url X
+        "facts": mars_table, #html table X
+        "hemi": mars_hemi_img #list of dictionaries X
     }
     return mars_data
 

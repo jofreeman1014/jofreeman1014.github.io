@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Costa Rica Weather</title>
+  <title>Mars Data Scraping</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -20,7 +20,35 @@
     <h3>Most Recent Mars Post: {{ mars.news_title }}</h3>
     <p>{{ mars.news_body }}</p>
   </div>
+  <div class = "container">
+    <img src = {{ mars.image }} class="img-thumbnail">
   </div>
+  <div class = "container-fluid" style = "padding: 20px; margin: 10px;">
+    <h2>Mars Weather:</h2>
+    {{mars.weather}}
+  </div>
+  <div class="container-fluid">
+    {{ mars.facts | safe }}
+  </div>
+  <div class="container-fluid" style="padding: 20px; margin: 10px;">
+    <p>Hemisphere Images</p>
+    <div class="row">
+      {% for img in mars.hemi %}
+      <div class="col-md-6 col-sm-3">
+        <img src={{ img.img_url }} class="img-thumbnail">
+      </div>
+      <!-- <div class="col-md-6 col-sm-3">
+        <img src={{ mars.hemi[1].url}} class="img-thumbnail">
+      </div>
+      <div class="col-md-6 col-sm-3">
+        <img src={{ mars.hemi[2].url}} class="img-thumbnail">
+      </div>
+      <div class="col-md-6 col-sm-3">
+        <img src={{ mars.hemi[3].url}} class="img-thumbnail">
+      </div> -->
+      {% endfor %}
+    </div>
+  </div>  
 </body>
 
 </html>
