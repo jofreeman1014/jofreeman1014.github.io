@@ -3,80 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title>JOF Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
     
-    <link rel="stylesheet" href="style.css">
 </head>
       
 <body style="background: rgb(240, 240, 240);">
-    <nav class="navbar navbar-expand-md navbar-light" style="background-color: #b58bb4; padding-left: 100px;">
-        <a class="navbar-brand">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Plots
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="temperature.html">Temperature vs. Lat</a>
-                <a class="dropdown-item" href="humidity.html">Humidity vs. Lat</a>
-                <a class="dropdown-item" href="cloudiness.html">Cloudiness vs. Lat</a>
-                <a class="dropdown-item" href="windspeed.html">Wind Speed vs. Lat</a>
-            </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="compare.html">Comparison</a>
-            </li>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid navbar-custom">
   
-          </ul>
-        </div>
-    </nav>
-    <br>
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="row">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="col-xs-9 phone-nav">
+                <a class="navbar-brand" href="#" id="logo">Lattitude</a>
+              </div>
+            </div>
+  
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                   <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                    <li><a href="visualizations/humidity.html">Humidity</a></li>
+                    <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                    <li><a href="visualizations/wind.html">Wind Speed</a></li>
+                  </ul>
+                </li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+      <br>
     <div class="container" >
         <div class="row">
             <div class = "box col-md-6 col-sm-12">
-        <h1>Welcome - Longitude, Latitude, Attitude</h1>
-        <p>Welcome to my study on weather patterns across a variety of latitudes. The question is fairly fundamental:
-            how does weather change as you approach the equator? While a simple question to tackle, proving it through 
-            data is where the fun begins! In this page, I analyze weather statistics across randomly selected weather 
-            stations, with a large pool of data spanning various latitudes. Click any of the images to view a plot 
-            using data pulled from openweathermap.
-        </p>
+                <h1>Welcome - Longitude, Latitude, Attitude</h1>
+                <p>Welcome to my study on weather patterns across a variety of latitudes. The question is fairly fundamental:
+                    how does weather change as you approach the equator? While a simple question to tackle, proving it through 
+                    data is where the fun begins! In this page, I analyze weather statistics across randomly selected weather 
+                    stations, with a large pool of data spanning various latitudes. Click any of the images to view a plot 
+                    using data pulled from openweathermap.
+                </p>
             </div>
-        <div class="col-md-5 col-sm-12">
-        <div class="box">
-            <h2>Data Visualizations</h2>
-            <div class="row">
-                    <div class="col-md-6 col-sm-3" style="padding: 15px;">
-                        <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" alt="Temperature" class="img-thumbnail"></a>
-                    </div>
-                    <div class="col-md-6 col-sm-3" style="padding: 15px;">
-                        <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Humidity" class="img-thumbnail"></a>
-                    </div>    
-                    <div class="col-md-6 col-sm-3" style="padding: 15px;">
-                        <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Cloudiness" class="img-thumbnail"></a>
-                    </div>
-                    <div class="col-md-6 col-sm-3" style="padding: 15px;">
-                        <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="Wind Speed" class="img-thumbnail"></a>
-                    </div>    
-            </div>
-        </div>
-        </div>
     </div>
 </body>
 </html>
