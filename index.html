@@ -1,65 +1,77 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>JOF Portfolio</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-    
+<html lang="en"><head>
+  <title>J. Freeman Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/234c8d2765.js"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all"> -->
+  <script src="https://kit.fontawesome.com/9083107a77.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="./assets/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
 </head>
-      
-<body style="background: rgb(240, 240, 240);">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid navbar-custom">
-          <div class="row">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle Navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <div class="col-xs-9 phone-nav">
-                <a class="navbar-brand" href="#" id="logo">Welcome</a>
-              </div>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right navbar-right-custom">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                   <li><a href="index.html">Proj1</a></li>
-                    <li><a href="#">Proj2</a></li>
-                    <li><a href="#">Proj3</a></li>
-                    <li><a href="#">Proj4</a></li>
-                    <li><a href="#">Proj5</a></li>
-                    <li><a href="#">Proj6</a></li>
-                    <li><a href="#">Proj7</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <br>
-    <div class="container" >
-        <div class="row">
-            <div class = "box">
-            <!-- </div> col-md-6 col-sm-12"> -->
-                <h1>Welcome</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut placerat eget ipsum in consequat. Nunc ornare convallis aliquet. Mauris semper elit eget pellentesque aliquet. Phasellus sollicitudin vehicula eleifend. Praesent consequat eros auctor lobortis venenatis. Aliquam erat volutpat. Proin tempor ipsum ac metus blandit, at tempus orci dapibus. Vivamus non interdum velit. Nulla luctus dignissim ligula vel volutpat. In eu lorem nisl.
 
-                    Vestibulum auctor sed orci sed vestibulum. Donec sit amet lacinia velit. Duis iaculis est turpis, et tincidunt nisi venenatis a. Etiam maximus eget neque in pulvinar. In hac habitasse platea dictumst. Pellentesque justo nisi, egestas quis bibendum sed, tristique in mi. Nullam at neque sed massa molestie lobortis vel sit amet leo. Suspendisse at purus urna. In ante nulla, maximus ut velit quis, mollis sodales lacus. Praesent nulla augue, fermentum at nisl ac, convallis euismod enim.
-                </p>
-            </div>
-    </div>
-</body>
-</html>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <a class="navbar-brand portfolio" href="#mainpage">Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item"></li>
+          </ul>
+
+          <form class="form-inline my-2 my-lg-0">
+              <ul class="navbar-nav mr-auto" style="padding-right: 65;">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span class="fas fa-clipboard fa-fw fa-lg" aria-hidden="true"></span>
+                          Project List
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#ml-tweet">
+                              <span class="fab fa-twitter fa-fw fa-lg" aria-hidden="true"></span>
+                              Coming Soon!
+                          </a>
+                          </div>
+                  </li>
+                  <!-- <li class="nav-item">
+                      <a class="nav-link" href="#" target="_blank">
+                          <span class="fas fa-file fa-fw fa-lg" aria-hidden="true"></span>    
+                          Resume
+                      </a>
+                  </li> -->
+              </ul>
+          </form>
+      </div>
+  </nav>
+
+  <div id="mainpage" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+      <div class="row mt-1">
+          <div class="box col-md-8 col-sm-12" style="padding-top: 40px">
+              <div class = "container-fluid d-flex flex-column justify-content-center align-items-center">
+                  <h3 class="text-center text-info font-weight-bold">Welcome</h3>
+                  <p class="text-justify">My name is Julian Freeman, and this is my project portfolio webpage. Please feel free to scroll down to view completed projects, or select a project from the 
+                      dropdown menu above.
+                  </p>
+                  <p class="text-justify">My primary background is in physics research, with a focus on soft-condensed-matter and random-close-packing. Throughout my time as a researcher, 
+                      I have participated in numerous experiments and projects within my field, one of which culminated in published results in Condensed Matter Physics. 
+                  </p>
+                  <p class="text-justify">Please feel free to visit my other web pages below to connect with me.
+                  </p>
+              </div>
+          </div>
+  
+          <div class="box col-md-4 col-sm-12">
+              <img class="headshot img-thumbnail" src="./assets/images/pic.jpg" alt="profile pic">
+          </div>
+      </div>  
+  </div>
+  <footer class="footer b-0 shadow-sm">
+      <span>© 2020 Julian Freeman. All rights reserved.</span>
+  </footer>
+  <script type="text/javascript" src="./assets/js/app.js"></script>
+</body></html>
