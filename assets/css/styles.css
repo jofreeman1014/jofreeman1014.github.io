@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Abhaya+Libre:700|Roboto|Roboto+Condensed|Montserrat|Lora:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abhaya+Libre:700|Roboto|Roboto+Condensed|Montserrat|EB+Garamond:500,700&display=swap");
 
 * {
 	margin: 0;
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar .portfolio {
-	background-color: #4e5a65;
+	background-color: #3d4c51;
 	color: #FFFFFF;
 	font-weight: bolder;
 	font-stretch: ultra-expanded; 
@@ -68,7 +68,7 @@ body {
 	box-shadow : 2px 2px 3px 0px rgba(0,0,0,0.2);
 	padding: 10px;
 	margin: 15px;
-	background-color: #4e5a65;
+	background-color: #3d4c51;
 	margin-top: 30px;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 /* #mainpage, */
-#ml-tweet,
+#worldweather,
 /* #immigration, */
 #unveilip,
 /* #leaflet, */
@@ -113,6 +113,10 @@ body {
 /* #pymaceuticals */
 { 
 	background: #f2f5f8;
+}
+
+.colh3{
+	color: #3d4c51;
 }
 
 #mainpage h5 {
@@ -146,8 +150,8 @@ body {
 
 
 p {
-	font-family: 'Lora', serif;
-	font-size: 0.9rem;
+	font-family: 'EB Garamond', serif;
+	font-size: 1rem;
 	line-height: 1.6rem;
 	color: rgba(0,0,0,.8);
 	width: 50%;
@@ -163,7 +167,7 @@ p::first-letter {
 .footer {
 	position: absolute;
 	width: 100%;
-	background-color: #4e5a65;
+	background-color: #3d4c51;
 	height: 50px;
 	margin-top: -50px; 
 	border-top: 3px solid #0275d8;
@@ -186,7 +190,7 @@ p::first-letter {
 @media screen and (max-width: 991px) {
 
 	.navbar {
-		background-color: #4e5a65;
+		background-color: #3d4c51;
 	}
 
 	.navbar .portfolio {
