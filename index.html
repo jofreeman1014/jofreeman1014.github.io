@@ -30,11 +30,38 @@
                         <i class="fas fa-sitemap"></i>
                           Project List
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#worldweather">
+                      <div class="dropdown-menu" style="left:auto; right:0;" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#worldweather">
                             <i class="fas fa-cloud-sun-rain"></i>
-
                               World Weather Trends
+                          </a>
+                          <a class="dropdown-item" href="#bellybio">
+                            <i class="fas fa-microscope"></i>
+                              Belly-Button Biodiversity
+                          </a>
+                          <!-- <a class="dropdown-item" href="#arcticmonkey">
+                            <i class="fas fa-music"></i>
+                              Arctic Monkeys Sentiment Analysis
+                          </a> -->
+                          <!-- <a class="dropdown-item" href="#hawaiiclimate">
+                            <i class="fas fa-umbrella-beach"></i>
+                              Hawaii Climate
+                          </a> -->
+                          <a class="dropdown-item" href="#officemart">
+                            <i class="fas fa-shopping-bag"></i>
+                              Office Mart Retail
+                          </a>
+                          <a class="dropdown-item" href="#videogames">
+                            <i class="fas fa-gamepad"></i>
+                              Video Game Sales
+                          </a>
+                          <a class="dropdown-item" href="#pyber">
+                            <i class="fas fa-car"></i>
+                              Pyber Rideshares
+                          </a>
+                          <a class="dropdown-item" href="#nycbike">
+                            <i class="fas fa-bicycle"></i>
+                              NYCiti Bikes
                           </a>
                           </div>
                   </li>
@@ -49,44 +76,42 @@
       </div>
   </nav>
 
-  <div id="mainpage" class="container-fluid d-flex flex-column justify-content-center align-items-center">
-      <div class="row mt-1">
-          <div class="box col-md-8 col-sm-12" style="padding-top: 40px">
-              <div class = "container-fluid d-flex flex-column justify-content-center align-items-center">
-                  <h3 class="text-center text-info font-weight-bold" style="margin-top: 50px;">Welcome</h3>
-                  <p class="text-justify">My name is Julian Freeman, and this is my project portfolio webpage. Please feel free to scroll down to view completed projects, or select a project from the 
-                      dropdown menu above.
-                  </p>
-                  <p class="text-justify">My primary background is in physics research, with a focus on soft-condensed-matter and random-close-packing. Throughout my time as a researcher, 
-                      I have participated in numerous experiments and projects within my field, one of which culminated in published results in Condensed Matter Physics. 
-                  </p>
-                  <p class="text-justify">Please feel free to visit my other web pages below to connect with me.
-                  </p>
-                  <div class="social-media mt-2">
-                    <span><a class="social" href="https://www.linkedin.com/in/freeman-julian/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
-                    <span><a class="social" href="https://github.com/jofreeman1014/" target="_blank"><i class="fab fa-github fa-2x"></i></a></span>
+    <div id="mainpage" class="container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="row mt-1">
+            <div class="box col-md-8 col-sm-12" style="padding-top: 40px">
+                <div class = "container-fluid d-flex flex-column justify-content-center align-items-center">
+                    <h3 class="text-center text-info font-weight-bold" style="margin-top: 50px;">Welcome</h3>
+                    <p class="text-justify">My name is Julian Freeman, and this is my project portfolio webpage. Please feel free to scroll down to view completed projects, or select a project from the 
+                        dropdown menu above.
+                    </p>
+                    <p class="text-justify">My primary background is in physics research, with a focus on soft-condensed-matter and random-close-packing. Throughout my time as a researcher, 
+                        I have participated in numerous experiments and projects within my field, one of which culminated in published results in Condensed Matter Physics. 
+                    </p>
+                    <p class="text-justify">Please feel free to visit my other web pages below to connect with me.
+                    </p>
+                    <div class="social-media mt-2">
+                        <span><a class="social" href="https://www.linkedin.com/in/freeman-julian/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
+                        <span><a class="social" href="https://github.com/jofreeman1014/" target="_blank"><i class="fab fa-github fa-2x"></i></a></span>
+                    </div>
                 </div>
-              </div>
-          </div>
-  
-          <div class="box col-md-4 col-sm-12">
-              <img class="headshot img-thumbnail" src="./assets/images/pic.jpg" alt="profile pic">
-          </div>
-      </div>  
-  </div>
+            </div>
 
+            <div class="box col-md-4 col-sm-12">
+                <img class="headshot img-thumbnail" src="./assets/images/pic.jpg" alt="profile pic">
+            </div>
+        </div>  
+    </div>
         <!-- Template Code For Fillers -->
     <div id="worldweather" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> World Weather Trends</h2>
-        <div class = "container">
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
-                    <p style="width: 500px">This project focused on observing different weather and climate patterns across the globe. Using an API, I pulled live weather data randomly on a global scale,
+                    <p>This project focused on observing different weather and climate patterns across the globe. Using an API, I pulled live weather data randomly on a global scale,
                         then used Python to visualize the results. 
                     </p>
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
-                        <!-- <li data-toggle="tooltip" title="" data-original-title="Libraries pymongo, pickle (to save and load the model), sklearn, nltk, pandas, re (to clean up the data), tweepy (to use the Twitter API), searchtweets, seaborn, word cloud, and matplotlib.">Python</li>                       -->
                         <li>Python (Matplotlib, Jupyter Notebook)</li>
                         <li><a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a></li>
                         <li>Hosted through Github Pages</li>
@@ -95,14 +120,14 @@
                     <h6 class = "text-center"><a href="https://github.com/jofreeman1014/python/tree/master/Python-APIs" target="_blank"><small>Github Link</small></a></h6>
                 </div>
                 <div class="box col-md-6 col-sm-12">
-                    <img class="img-thumbnail" src="assets/images/LatLongDist.png" style = "margin-top: 40px;"alt="wwp image">
+                    <img class="img-thumbnail" src="assets/images/LatLongDist.png" style = "margin-top: 40px;"alt="wwt image">
                 </div>
             </div>
         </div>
     </div>
     <div id="bellybio" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> Belly-Button Biodiversity</h2>
-        <div class = "container">
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
                     <p style="width: 500px">This project focused on observing different weather and climate patterns across the globe. Using an API, I pulled live weather data randomly on a global scale,
@@ -124,9 +149,49 @@
             </div>
         </div>
     </div>
-    <div id="arcticmonkey" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+    <!-- <div id="arcticmonkey" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> Arctic Monkeys Sentiment Analysis</h2>
-        <div class = "container">
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
+            <div class = "row">
+                <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
+                    <p style="width: 500px">Coming Soon! 
+                    </p>
+                    <h6 class="text-center">Tools and Techniques:</h6> 
+                    <ul>    
+                        <li>Python (Matplotlib, Jupyter Notebook)</li>
+                    </ul>    
+                    <h6 class = "text-center"><a href="https://jofreeman1014.github.io/jofweather/" target="_blank"><small>Website Link</small></a></h6>
+                    <h6 class = "text-center"><a href="https://github.com/jofreeman1014/python/tree/master/Python-APIs" target="_blank"><small>Github Link</small></a></h6>
+                </div>
+                <div class="box col-md-6 col-sm-12">
+                    <img class="img-thumbnail" src="assets/images/LatLongDist.png" style = "margin-top: 40px;"alt="wwp image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hawaiiclimate" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+        <h2 class="font-weight-normal mb-3"> Hawaii Climate Analysis</h2>
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
+            <div class = "row">
+                <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
+                    <p style="width: 500px">Coming Soon! 
+                    </p>
+                    <h6 class="text-center">Tools and Techniques:</h6> 
+                    <ul>    
+                        <li>Python (Matplotlib, Jupyter Notebook)</li>
+                    </ul>    
+                    <h6 class = "text-center"><a href="https://jofreeman1014.github.io/jofweather/" target="_blank"><small>Website Link</small></a></h6>
+                    <h6 class = "text-center"><a href="https://github.com/jofreeman1014/python/tree/master/Python-APIs" target="_blank"><small>Github Link</small></a></h6>
+                </div>
+                <div class="box col-md-6 col-sm-12">
+                    <img class="img-thumbnail" src="assets/images/LatLongDist.png" style = "margin-top: 40px;"alt="wwp image">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="officemart" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+        <h2 class="font-weight-normal mb-3"> Office Mart Retail</h2>
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
                     <p style="width: 500px">Coming Soon! 
@@ -145,9 +210,10 @@
             </div>
         </div>
     </div>
+
     <div id="videogames" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> Video Game Trends</h2>
-        <div class = "container">
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
                     <p style="width: 500px">Coming soon! 
@@ -168,7 +234,7 @@
     </div>
     <div id="pyber" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> Pyber</h2>
-        <div class = "container">
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
                     <p style="width: 500px">Coming soon! 
@@ -187,9 +253,9 @@
             </div>
         </div>
     </div>
-    <div id="nycscooter" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+    <div id="nycbike" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> NYCiti Bike</h2>
-        <div class = "container">
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
                     <p style="width: 500px">Coming soon! 
@@ -218,13 +284,11 @@
 
 <!-- 
 List of Projects to add:
-    - Arctic Monkeys Sentiment Analysis
-    - Pyber
     - Healthcare Link
     - Leaflet Map (FIX!)
     - Web Scraping (FIX!)
     - Tableau Dashboard
-    - Video Game Tableau Dashboard?
+    - Video Game Tableau Dashboard? Other Dashboards?
     - SQLAlchemy and SQL?
 
 

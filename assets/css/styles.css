@@ -86,7 +86,7 @@ body {
     padding-left: 40px;
     padding-right: 40px
 }
-#pymaceuticals
+#nycbike
 {
 	padding-top: 90px!important;
 }
@@ -102,17 +102,13 @@ body {
 
 /* #mainpage, */
 #worldweather,
-/* #immigration, */
-#unveilip,
-/* #leaflet, */
-#d3-challenge,
-/* #d3-plotly, */
-#missiontomars,
-/* #employees-research, */
-#latitude-dashboard,
-/* #dynamic-filter, */
-#weather 
-/* #pymaceuticals */
+/* #bellybio, */
+#arcticmonkey,
+/* #hawaiiclimate, */
+#officemart,
+/* #videogames, */
+#pyber
+/* #nycbike */
 { 
 	background: #f2f5f8;
 }
@@ -156,7 +152,7 @@ p {
 	font-size: 1rem;
 	line-height: 1.6rem;
 	color: rgba(0,0,0,.8);
-	width: 50%;
+	width: 80%;
 
 }
 p::first-letter {
