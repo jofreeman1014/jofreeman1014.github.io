@@ -34,10 +34,16 @@
                         <a class="dropdown-item" href="#worldweather">
                             <i class="fas fa-cloud-sun-rain"></i>
                               World Weather Trends
+                              <!-- Description: Done, could do with more information if needs be.
+                                Page: FIX, needs further analysis page with the statistics-->
                           </a>
                           <a class="dropdown-item" href="#bellybio">
                             <i class="fas fa-microscope"></i>
                               Belly-Button Biodiversity
+                              <!-- Description: FIX, add more information to the description. Needs more meat. Add representative image.
+                                Page: FIX, current page could do with more polish but it is functional. Update with a different color scheme. 
+                                    Github repo needs a brand new readme to accompany the new files and to describe the project as a whole if I am
+                                    linking this to my project page. -->
                           </a>
                           <!-- <a class="dropdown-item" href="#arcticmonkey">
                             <i class="fas fa-music"></i>
@@ -50,18 +56,26 @@
                           <a class="dropdown-item" href="#officemart">
                             <i class="fas fa-shopping-bag"></i>
                               Office Mart Retail
+                              <!-- Description: FIX, unsure where to find this dataset in its entirety, try to dig up some information about where it came from. Try to add an image for it too.
+                                Page: Done, it's a Tableau page -->
                           </a>
                           <a class="dropdown-item" href="#videogames">
                             <i class="fas fa-gamepad"></i>
                               Video Game Sales
+                              <!-- Description: FIX, hasn't even been started. Needs display image as well.
+                                Page: Done, it's a Tableau page. -->
                           </a>
                           <a class="dropdown-item" href="#pyber">
                             <i class="fas fa-car"></i>
                               Pyber Rideshares
+                              <!-- Description: FIX, hasn't even been started. Needs display image as well.
+                                Page: Done, Github link could do with a slight bit of tweaking but it should be perfect. -->
                           </a>
                           <a class="dropdown-item" href="#nycbike">
                             <i class="fas fa-bicycle"></i>
                               New York CitiBikes
+                              <!-- Description: FIX, hasn't even been started. Needs display image as well.
+                                Page: Done, it's a Tableau page. -->
                           </a>
                           </div>
                   </li>
@@ -108,7 +122,7 @@
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
                     <p>This project focused on observing different weather and climate patterns across the globe. Using an API, I pulled live weather data randomly on a global scale,
-                        then used Python to visualize the results. 
+                        then used Python to visualize and analyze the results. 
                     </p>
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
@@ -130,8 +144,8 @@
         <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
-                    <p style="width: 500px">Using data from the <a href="http://robdunnlab.com/projects/belly-button-biodiversity/" target="_blank"><small>Rodunn Lab's</small></a> "Belly Button Biodiversity" dataset, I built a 
-                        dashboard to explore the data, listing subject information alongside bacteria colony information. The dashboard contains 3 visualizations: Top 10 samples present in sample set as percentages, 
+                    <p>Using data from the <a href="http://robdunnlab.com/projects/belly-button-biodiversity/" target="_blank"><small>Rodunn Lab's</small></a> "Belly Button Biodiversity" dataset, I built a 
+                        single-page application dashboard to explore the data, listing subject information alongside bacteria colony information. The dashboard contains 3 visualizations: Top 10 samples present in sample set as percentages, 
                         a color-coded bubble chart that displays each sample's bacterial operational taxonomic unit (OTU) plotted against the sample values, and a gauge to display each subject's bellybutton washing frequency (wfreq).
                         This dashboard is fully interactive, so users can see each of the charts update automatically when selecitng a new subject from the dropdown on the page.
                     </p>
@@ -196,12 +210,15 @@
         <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
-                    <p style="width: 500px">Coming Soon! 
+                    <p> This Tableau visualization is a single-page dashboard that displays Office Mart retail data across Europe. 
+                         This viz is interactive, and updates when users select a location on the provided map. It then refreshes the other two plots automatically. 
+                         This dashboard includes a Sales/Profit bubble chart and a Sales/Target area chart divided into Furniture, Office Supplies, and Technlolgy sales. 
+                         There is also a year slider to parse data for specific years, or for all years within the dataset.
                     </p>
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
                         <!-- <li data-toggle="tooltip" title="" data-original-title="Libraries pymongo, pickle (to save and load the model), sklearn, nltk, pandas, re (to clean up the data), tweepy (to use the Twitter API), searchtweets, seaborn, word cloud, and matplotlib.">Python</li>                       -->
-                        <li>Python (Matplotlib, Jupyter Notebook)</li>
+                        <li>Tableau (single-page viz)</li>
                     </ul>    
                     <h6 class = "text-center"><a href="https://public.tableau.com/profile/julian.freeman#!/vizhome/TableauPractice1_23/OfficeMartRetailAnalysis" target="_blank"><small>Tableau Link</small></a></h6>
                 </div>
@@ -217,12 +234,15 @@
         <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
-                    <p style="width: 500px">Coming soon! (Since 2015) 
+                    <p> This dataset contains video game sales data from 1980 to 2015. I dove into this data and developed a Tableau storyboard 
+                        that utilizes may different plots to analyze video game sales trends over within the data year range. This analysis contains many eras 
+                        of data, going from early consoles such as the Atari all the way to more modern consoles like the Xbox 360 and PlayStation 3, and analysis of  
+                        popular video game and game genre sales for these consoles.
                     </p>
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
                         <!-- <li data-toggle="tooltip" title="" data-original-title="Libraries pymongo, pickle (to save and load the model), sklearn, nltk, pandas, re (to clean up the data), tweepy (to use the Twitter API), searchtweets, seaborn, word cloud, and matplotlib.">Python</li>                       -->
-                        <li>Python (Matplotlib, Jupyter Notebook)</li>
+                        <li>Tableau (storyboard visualization)</li>
                     </ul>    
                     <h6 class = "text-center"><a href="https://public.tableau.com/profile/julian.freeman#!/vizhome/ConsoleGameAnalysis/GamingovertheYears" target="_blank"><small>Tableau Link</small></a></h6>
                 </div>
@@ -237,12 +257,14 @@
         <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
-                    <p style="width: 500px">Coming soon! 
+                    <p> Ridesharing apps are a growing market across the world, though their usage trends largely depend on where the riders 
+                        are and where they're going. This project focused on exploring data from Pyber (a ficticious rideshare company) to find rider/driver trends within this 
+                        train of thought. 
                     </p>
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
                         <!-- <li data-toggle="tooltip" title="" data-original-title="Libraries pymongo, pickle (to save and load the model), sklearn, nltk, pandas, re (to clean up the data), tweepy (to use the Twitter API), searchtweets, seaborn, word cloud, and matplotlib.">Python</li>                       -->
-                        <li>Python (Matplotlib, Jupyter Notebook)</li>
+                        <li>Python (Matplotlib)</li>
                     </ul>    
                     <h6 class = "text-center"><a href="https://github.com/jofreeman1014/python/tree/master/Matplotlib" target="_blank"><small>Github Link</small></a></h6>
                 </div>
@@ -257,8 +279,12 @@
         <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
             <div class = "row">
                 <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
-                    <p style="width: 500px">Coming soon! 
-                    </p>
+                    <p>New York Citi Bike Share (NYCBS) is a bikeshare program in New York City that started in 2013. Since then, the service has developed 
+                        and expanded across the city, providing users a new transportation alternative. Users can pay to use these bikes with day passes, or they can subscribe 
+                        to the service annually for more easier access for more routine users.</p>
+                    <p>I've taken the time to analyze some NYCBS data to look for interesting trends within the data. The timeframe I'm looking through is from 
+                        January to April 2018. My primary focus was on rider hotspots and location data, mixed with some user data. I've outlined some of the major 
+                        observations below. </p>
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
                         <!-- <li data-toggle="tooltip" title="" data-original-title="Libraries pymongo, pickle (to save and load the model), sklearn, nltk, pandas, re (to clean up the data), tweepy (to use the Twitter API), searchtweets, seaborn, word cloud, and matplotlib.">Python</li>                       -->
