@@ -161,6 +161,20 @@ p::first-letter {
 	color: rgba(0,0,0,.6);
  }
 
+.vis-thumb{
+	height: 500px;
+	width: 700px;
+	position: relative;
+}
+
+.vis-thumb img{
+	max-height: 100%;
+	max-width: 100%;
+	left: -50%;
+	right: -50%;
+	position: absolute;
+	margin: auto auto;
+}
 
 .footer {
 	position: absolute;
