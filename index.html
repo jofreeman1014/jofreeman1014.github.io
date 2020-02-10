@@ -12,7 +12,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
       <a class="navbar-brand portfolio" href="#mainpage">Portfolio</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -26,25 +26,38 @@
           <form class="form-inline my-2 my-lg-0">
               <ul class="navbar-nav mr-auto" style="padding-right: 100;">
                   <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-sitemap"></i>
-                          Project List
-                      </a>
-                      <div class="dropdown-menu" style="left:auto; right:0;" aria-labelledby="navbarDropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-sitemap"></i>
+                        Project List
+                    </a>
+                    <div class="dropdown-menu" style="left:auto; right:0;" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#worldweather">
                             <i class="fas fa-cloud-sun-rain"></i>
                               World Weather Trends
                               <!-- Description: Done, could do with more information if needs be.
                                 Page: FIX, needs further analysis page with the statistics-->
-                          </a>
-                          <a class="dropdown-item" href="#bellybio">
+                        </a>
+                        <a class="dropdown-item" href="#bellybio">
                             <i class="fas fa-microscope"></i>
                               Belly-Button Biodiversity
                               <!-- Description: FIX, add more information to the description. Needs more meat. Add representative image.
                                 Page: FIX, current page could do with more polish but it is functional. Update with a different color scheme. 
                                     Github repo needs a brand new readme to accompany the new files and to describe the project as a whole if I am
                                     linking this to my project page. -->
-                          </a>
+                        </a>
+                        <a class="dropdown-item" href="#marsmission">
+                            <i class="fas fa-rocket"></i>
+                              Mission to Mars
+                              <!-- Description: Done, could do with more information if needs be.
+                                Page: FIX, needs further analysis page with the statistics-->
+                        </a>
+                        <a class="dropdown-item" href="#millionairemaker">
+                            <i class="fas fa-money-bill-wave"></i>
+                              Millionaire Maker App
+                              <!-- Description: Done, could do with more information if needs be.
+                                Page: FIX, needs further analysis page with the statistics-->
+                        </a>
+
                           <!-- <a class="dropdown-item" href="#arcticmonkey">
                             <i class="fas fa-music"></i>
                               Arctic Monkeys Sentiment Analysis
@@ -53,42 +66,48 @@
                             <i class="fas fa-umbrella-beach"></i>
                               Hawaii Climate
                           </a> -->
-                          <a class="dropdown-item" href="#officemart">
+                        <a class="dropdown-item" href="#officemart">
                             <i class="fas fa-shopping-bag"></i>
-                              Office Mart Retail
-                              <!-- Description: FIX, unsure where to find this dataset in its entirety, try to dig up some information about where it came from. Try to add an image for it too.
+                                Office Mart Retail
+                                <!-- Description: FIX, unsure where to find this dataset in its entirety, try to dig up some information about where it came from. Try to add an image for it too.
                                 Page: Done, it's a Tableau page -->
-                          </a>
-                          <a class="dropdown-item" href="#videogames">
+                        </a>
+                        <a class="dropdown-item" href="#crimeweather">
+                            <i class="fas fa-mask"></i>
+                              Crime-Weather Analysis
+                              <!-- Description: Done, could do with more information if needs be.
+                                Page: FIX, needs further analysis page with the statistics-->
+                        </a>
+                        <a class="dropdown-item" href="#videogames">
                             <i class="fas fa-gamepad"></i>
-                              Video Game Sales
-                              <!-- Description: FIX, hasn't even been started. Needs display image as well.
+                                Video Game Sales
+                                <!-- Description: FIX, hasn't even been started. Needs display image as well.
                                 Page: Done, it's a Tableau page. -->
-                          </a>
-                          <a class="dropdown-item" href="#pyber">
+                        </a>
+                        <a class="dropdown-item" href="#pyber">
                             <i class="fas fa-car"></i>
-                              Pyber Rideshares
-                              <!-- Description: FIX, hasn't even been started. Needs display image as well.
+                                Pyber Rideshares
+                                <!-- Description: FIX, hasn't even been started. Needs display image as well.
                                 Page: Done, Github link could do with a slight bit of tweaking but it should be perfect. -->
-                          </a>
-                          <a class="dropdown-item" href="#nycbike">
+                        </a>
+                        <a class="dropdown-item" href="#nycbike">
                             <i class="fas fa-bicycle"></i>
-                              New York CitiBikes
-                              <!-- Description: FIX, hasn't even been started. Needs display image as well.
+                                New York CitiBikes
+                                <!-- Description: FIX, hasn't even been started. Needs display image as well.
                                 Page: Done, it's a Tableau page. -->
-                          </a>
-                          </div>
-                  </li>
-                  <!-- <li class="nav-item">
-                      <a class="nav-link" href="#" target="_blank">
-                          <span class="fas fa-file fa-fw fa-lg" aria-hidden="true"></span>    
-                          Resume
-                      </a>
-                  </li> -->
+                        </a>
+                    </div>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#" target="_blank">
+                        <span class="fas fa-file fa-fw fa-lg" aria-hidden="true"></span>    
+                        Resume
+                    </a>
+                </li> -->
               </ul>
           </form>
       </div>
-  </nav>
+    </nav>
 
     <div id="mainpage" class="container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="row mt-1">
@@ -117,31 +136,6 @@
         </div>  
     </div>
         <!-- Template Code For Fillers -->
-    <!-- <div id="moneymaker" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
-        <h2 class="font-weight-normal mb-3"> World Weather Trends</h2>
-        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
-            <div class = "row">
-                <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
-                    <p>This project focused on observing different weather and climate patterns across the globe. Using an API, I pulled live weather data randomly on a global scale,
-                        then used Python to visualize and analyze the results. 
-                    </p>
-                    <h6 class="text-center">Tools and Techniques:</h6> 
-                    <ul>    
-                        <li>Python (Matplotlib, Jupyter Notebook)</li>
-                        <li><a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a></li>
-                        <li>Hosted through Github Pages</li>
-                    </ul>    
-                    <h6 class = "text-center"><a href="https://millionairemaker.herokuapp.com/" target="_blank"><small>Website Link</small></a></h6>
-                    <h6 class = "text-center"><a href="https://github.com/jofreeman1014/python/tree/master/Python-APIs" target="_blank"><small>Github Link</small></a></h6>
-                </div>
-                <div class="box col-md-6 col-sm-12">
-                    <div class="vis-thumb">
-                        <img class="img-thumbnail" src="assets/images/LatLongDist.png" style = "margin-top: 40px;"alt="wwt image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     <!-- <div id="crimeweather" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> World Weather Trends</h2>
         <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
@@ -180,6 +174,7 @@
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
                         <li>Python (Jupyter Notebook, Matplotlib, Pandas)</li>
+                        <li>HTML, Bootstrap, and custom CSS</li>
                         <li><a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a></li>
                         <li>Hosted through Github Pages</li>
                     </ul>    
@@ -207,7 +202,7 @@
                     <h6 class="text-center">Tools and Techniques:</h6> 
                     <ul>    
                         <!-- <li data-toggle="tooltip" title="" data-original-title="Libraries pymongo, pickle (to save and load the model), sklearn, nltk, pandas, re (to clean up the data), tweepy (to use the Twitter API), searchtweets, seaborn, word cloud, and matplotlib.">Python</li>                       -->
-                        <li>HTML & CSS</li>
+                        <li>HTML, Bootstrap, and custom CSS</li>
                         <li>Javascript</li>
                         <li>Python (Flask)</li>
                         <li>Hosted through Heroku</li>
@@ -218,6 +213,72 @@
                 <div class="box col-md-6 col-sm-12" style="text-align: center; max-height: 100%;">
                     <div class="vis-thumb">
                         <img class="img-thumbnail" src="assets/images/bbb.PNG" style = "margin-top: 40px;  text-align: center;" alt="bbb image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="marsmission" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+        <h2 class="font-weight-normal mb-3"> Mission to Mars</h2>
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
+            <div class = "row">
+                <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
+                    <p> This project utilizes various methods of webscraping to populate an application with updated information whenever users 
+                        want it. At the push of a button, this application scrapes various Mars-based information and images from across the web, 
+                        and updates the results shortly after. The Github link contains the web scraping code, and the live page updates itself 
+                        when users select the element to update. 
+                    </p>
+                    <p> Note: Some updates may take a while to execute due to scraping method, or fail due to the scraped page being updated. While using the live page, 
+                        please be patient with any errors or timeouts. For more consistent results, execute the code included in the Jupyter Notebook, or run the included app.py Python code to 
+                        run it locally.
+                    </p>
+                    <h6 class="text-center">Tools and Techniques:</h6> 
+                    <ul>    
+                        <li>Python (Jupyter Notebook, BeautifulSoup, Pandas, Splinter, Selenium, SQLite3, Flask)</li>
+                        <li>HTML, Bootstrap, and custom CSS</li>
+                        <li>Hosted through Heroku</li>
+                    </ul>    
+                    <h6 class = "text-center"><a href="https://marsmission.herokuapp.com/" target="_blank"><small>Website Link</small></a></h6>
+                    <h6 class = "text-center"><a href="https://github.com/jofreeman1014/web-scraping-challenge" target="_blank"><small>Github Link</small></a></h6>
+                </div>
+                <div class="box col-md-6 col-sm-12">
+                    <div class="vis-thumb">
+                        <img class="img-thumbnail" src="assets/images/marsmission.PNG" style = "margin-top: 40px;"alt="wwt image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="millionairemaker" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+        <h2 class="font-weight-normal mb-3"> Millionaire Maker App</h2>
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
+            <div class = "row">
+                <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
+                    <p> This project is a proof-of-concept for a machine-learning powered application. Using the USD/EUR currency pair, and market and financial data associated with each currency, 
+                        we trained a convolution neural network (CNN) on the data to see if it could make money by following patterns within the data. This data is modeled, trained, and tested 
+                        on data from 2018, then allowed to make buy and sell predictions to turn a profit on currency exchanges through simulated "live" data.
+                    </p>
+                    <p> This was a group project, and I would like to thank my friends  
+                        <a href="https://www.linkedin.com/in/lawrence-ferretti/" target="_blank"><small>Lawrence Ferretti</small></a>, 
+                        <a href="https://www.linkedin.com/in/christophermholt222/" target="_blank"><small>Chris Holt</small></a>, 
+                        <a href="https://www.linkedin.com/in/jack-lindsay-83473371/" target="_blank"><small>Jack Lindsay</small></a>, 
+                        <a href="https://www.linkedin.com/in/jasonjree/" target="_blank"><small>Jason Ree</small></a>, and 
+                        <a href="https://www.linkedin.com/in/alexmattwolf/" target="_blank"><small>Alex Wolf</small></a>.
+                    </p>
+
+                    <h6 class="text-center">Tools and Techniques:</h6> 
+                    <ul>    
+                        <li>Python (Jupyter Notebook, Pandas, Numpy, SQLAlchemy, Flask, Scikit Learn)</li>
+                        <li>HTML, Bootstrap, and custom CSS</li>
+                        <li>Interactive Visualizations through JavaScript</li>
+                        <li>Hosted through Heroku</li>
+                    </ul>    
+                    <h6 class = "text-center"><a href="https://millionairemaker.herokuapp.com/" target="_blank"><small>Website Link</small></a></h6>
+                    <h6 class = "text-center"><a href="https://github.com/lferretti/Project-3" target="_blank"><small>Github Link</small></a></h6>
+                </div>
+                <div class="box col-md-6 col-sm-12">
+                    <div class="vis-thumb">
+                        <img class="img-thumbnail" src="assets/images/moneymaker.PNG" style = "margin-top: 40px;"alt="wwt image">
                     </div>
                 </div>
             </div>
@@ -287,7 +348,41 @@
             </div>
         </div>
     </div>
-
+    <div id="crimeweather" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
+        <h2 class="font-weight-normal mb-3"> Crime-Weather Analysis</h2>
+        <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
+            <div class = "row">
+                <div class="box col-md-6 col-sm-12" style="padding-top: 40px">
+                    <p> Inspired by scenes from our favorite Noir crime movies, my team and I saught out to see if there was any relationship between crimes and the 
+                        weather at that time. By merging crime data from five major US cities and hourly weather data, we built a website to showcase our 
+                        findings through interactive visualizations. 
+                    </p>
+                    <p> This was a group project, and I would like to thank my friends  
+                        <a href="https://www.linkedin.com/in/lawrence-ferretti/" target="_blank"><small>Lawrence Ferretti</small></a>, 
+                        <a href="https://www.linkedin.com/in/christophermholt222/" target="_blank"><small>Chris Holt</small></a>, 
+                        <a href="https://www.linkedin.com/in/jack-lindsay-83473371/" target="_blank"><small>Jack Lindsay</small></a>, 
+                        <a href="https://www.linkedin.com/in/jasonjree/" target="_blank"><small>Jason Ree</small></a>, and 
+                        <a href="https://www.linkedin.com/in/alexmattwolf/" target="_blank"><small>Alex Wolf</small></a>.
+                    </p>
+                    <h6 class="text-center">Tools and Techniques:</h6> 
+                    <ul>    
+                        <li>Python (Jupyter Notebook, Pandas, Numpy, Matplotlib, SQLAlchemy, Flask)</li>
+                        <li>Python API Pulls from <a href="https://openweathermap.org/" target="_blank">OpenWeatherMap API</a></li>
+                        <li>HTML and CSS</li>
+                        <li>Interactive Visualizations through JavaScript</li>
+                        <li>Hosted through Heroku</li>
+                    </ul>    
+                    <h6 class = "text-center"><a href="https://crime-weather.herokuapp.com/" target="_blank"><small>Website Link</small></a></h6>
+                    <h6 class = "text-center"><a href="https://github.com/Trippl7777/Project_2" target="_blank"><small>Github Link</small></a></h6>
+                </div>
+                <div class="box col-md-6 col-sm-12">
+                    <div class="vis-thumb">
+                        <img class="img-thumbnail" src="assets/images/crimeweather.PNG" style = "margin-top: 40px;"alt="crimeweather image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="videogames" class="h-100 mt-5 pt-5 container-fluid d-flex flex-column justify-content-center align-items-center">
         <h2 class="font-weight-normal mb-3"> Video Game Trends</h2>
         <div class="container-fluid d-flex flex-column" style="padding-left: 160px;">
